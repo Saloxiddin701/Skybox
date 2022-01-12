@@ -45,3 +45,10 @@ function mobileMenu() {
     burger.classList.toggle("active")
     navItem.classList.toggle("active")
 }
+//navbar end
+
+//sticky
+window.addEventListener("scroll", function () {
+    var navItem = document.querySelector('.navbar');
+    navItem.classList.toggle("fixed", window.scrollY > 0);
+})

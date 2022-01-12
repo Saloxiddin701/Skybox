@@ -9,7 +9,6 @@
         left: 0;
         justify-content: space-around;
         padding: 20px 0;
-        background: linear-gradient(to right, #3B668D, #BB6DF3);
         width: 100%;
     }
     .header .navbar .nav-item {
@@ -28,6 +27,9 @@
         gap: 50px;
         z-index: 99;
         transition: .4s;
+    }
+    .header .navbar.fixed {
+        background: linear-gradient(to right, #3B668D, #BB6DF3);
     }
     .header .navbar .logo,
     .header .navbar .burger {
