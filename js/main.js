@@ -52,3 +52,23 @@ window.addEventListener("scroll", function () {
     var navItem = document.querySelector('.navbar');
     navItem.classList.toggle("fixed", window.scrollY > 0);
 })
+//sticky end
+
+//modal
+var modal = document.getElementById("modal");
+var btn = document.getElementById("login");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function () {
+    modal.style.display = "block";
+}
+
+span.onclick = function () {
+    modal.style.display = "none";
+}
+
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
