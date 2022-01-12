@@ -55,9 +55,9 @@ window.addEventListener("scroll", function () {
 //sticky end
 
 //modal
-var modal = document.getElementById("modal");
-var btn = document.getElementById("login");
-var span = document.getElementsByClassName("close")[0];
+const modal = document.getElementById("modal");
+const btn = document.getElementById("login");
+const span = document.getElementsByClassName("close")[0];
 
 btn.onclick = function () {
     modal.style.display = "block";
